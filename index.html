@@ -27,7 +27,7 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
+   <script>
     ((p,u,s,h)=>{
          p._push={"apiKey":'7122836191390152'};
          p._pushfcm = {
@@ -39,7 +39,7 @@
           y.async = 1;
           y.id="pushninja_script"
           y.src = s+h;
-          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
+          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/qa/v0.0.77/push/'push.min.js');
   </script>
 </head>
 
@@ -440,7 +440,22 @@
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+    <form>
+      <label><b>Enter a jName</b></label>
+      <input type="text" name="FirstName" id="FirstName" />
+      <label><b>Enter Phone</b></label>
+      <input type="number" name="Phone" id="Contact" />
+    </form>
+    <input type="submit" onclick="showInput();" /><br />
+    <script>
+      function showInput() {
+        let obj={};
+        obj.FirstName= document.getElementById("FirstName").value;
+        obj.Contact=  document.getElementById("Contact").value;
+        window.setCustomFields(obj);
+      console.log("obj.. 123",obj);
+      }
+    </script>
 </body>
 
 </html>
