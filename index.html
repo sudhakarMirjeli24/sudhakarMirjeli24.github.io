@@ -28,19 +28,17 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 <script>
-    ((p,u,s,h)=>{
-         p._push={"apiKey":'3900010053471074'};
-         p._pushfcm = {
-           location:'qa'
-         };
-          let l,y;
-          l = u.getElementsByTagName('head')[0];
-          y = u.createElement('script');
-          y.async = 1;
-          y.id="pushninja_script"
-          y.src = s+h;
-          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/qa/v0.0.81/push/' , 'push.min.js');
-  </script>
+        (function(s, i, t, e, r, p) {
+      p = i.getElementsByTagName('head')[0];
+      r = i.createElement('script');
+      r.async = 1;
+      r.src = t + e;
+      r.onload = () => {
+          s._sr_r_.init('952702977141031',5,'qa')
+    };
+    p.appendChild(r);
+    })(window, document, 'https://infinity-public-js.500apps.com/siterecording/', 'siterecorder.min.js');
+    </script>
 </head>
 
 <body>
