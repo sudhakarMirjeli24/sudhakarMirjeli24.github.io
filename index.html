@@ -27,6 +27,22 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <form>
+      <label><b>Enter a jName</b></label>
+      <input type="text" name="FirstName" id="FirstName" />
+      <label><b>Enter Phone</b></label>
+      <input type="number" name="Phone" id="Contact" />
+    </form>
+    <input type="submit" onclick="showInput();" /><br />
+    <script>
+      function showInput() {
+        let obj={};
+        obj.FirstName= document.getElementById("FirstName").value;
+        obj.Contact=  document.getElementById("Contact").value;
+        window.setCustomFields(obj);
+      console.log("obj.. 123",obj);
+      }
+    </script>
  <script>
     ((p,u,s,h)=>{
          p._push={"apiKey":'1489163809956657'};
@@ -39,7 +55,7 @@
           y.async = 1;
           y.id="pushninja_script"
           y.src = s+h;
-          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/push/','push.min.js');
+          l.appendChild(y);})(window,document,'https://infinity-public-js.500apps.com/qa/v0.0.81/push/','push.min.js');
   </script>
 </head>
 
