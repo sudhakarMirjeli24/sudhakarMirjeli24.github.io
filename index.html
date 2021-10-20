@@ -27,7 +27,20 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css"> 
-    
+    (function(u, t, r, a, c, k) {
+	k = t.getElementsByTagName('head')[0];
+	c = t.createElement('script');
+	c.async = 1;
+	c.src = r + a;
+	c.onload = () => {
+		u._ut.init('2973235554909825','qa','115');
+u._ut.setEmail('nikitha.reddy@gmail.com');
+                u._ut.setUserAttributes({
+                    'testing': 'success'
+                });
+            };
+            k.appendChild(c);
+        })(window, document, 'https://infinity-public-js.500apps.com/usertracker/', 'usertracker.min.js');
 
 </head>
 <body>
