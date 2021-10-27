@@ -22,7 +22,22 @@
     <link href="mysource_files/style.css" rel="stylesheet">
 
   </head>
-
+<form>
+      <label><b>Enter your Name</b></label>
+      <input type="text" name="FirstName" id="FirstName" />
+      <label><b>Enter Phone</b></label>
+      <input type="number" name="Phone" id="Contact" />
+    </form>
+    <input type="submit" onclick="showInput();" /><br />
+    <script>
+      function showInput() {
+        let obj={};
+        obj.FirstName= document.getElementById("FirstName").value;
+        obj.Contact=  document.getElementById("Contact").value;
+        window.setCustomFields(obj);
+      console.log("obj.. 123",obj);
+      }
+    </script>
   <body>
 
     <div class="container">
@@ -49,22 +64,7 @@
         </ol>
 
       </header>
-<form>
-      <label><b>Enter your Name</b></label>
-      <input type="text" name="FirstName" id="FirstName" />
-      <label><b>Enter Phone</b></label>
-      <input type="number" name="Phone" id="Contact" />
-    </form>
-    <input type="submit" onclick="showInput();" /><br />
-    <script>
-      function showInput() {
-        let obj={};
-        obj.FirstName= document.getElementById("FirstName").value;
-        obj.Contact=  document.getElementById("Contact").value;
-        window.setCustomFields(obj);
-      console.log("obj.. 123",obj);
-      }
-    </script>
+
       <div class="page-heading">
 
         <!-- Page Heading -->
